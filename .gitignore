@@ -1,0 +1,13 @@
+*.pyc
+*.pyo
+*.db
+*.csv
+.DS_Store
+.coverage
+.idea
+local_settings.py
+open_pa/static*
+open_pa/djga/client_secrets.json
+client_secrets.json
+client_secret*.json
+*.p12
