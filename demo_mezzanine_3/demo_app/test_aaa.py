@@ -1,10 +1,11 @@
 from django.test import TestCase
 
-# Create your tests here.
+from django.conf import settings
+print(settings.TEST_RUNNER)
 
 class AAATest(TestCase):
-    def test_3(self):
+    def test_1(self):
         self.assertEqual(1, 1)
 
-    def test_4(self):
+    def test_2(self):
         self.assertEqual(1, 1)

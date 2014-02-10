@@ -1,8 +1,8 @@
 from django.test import TestCase
 
-# Create your tests here.
+# Create your _tests here.
 
-class AAATest(TestCase):
+class BBBTest(TestCase):
     def test_3(self):
         self.assertEqual(1, 1)
 

@@ -187,7 +187,7 @@ DATABASES = {
 import os
 
 # Full filesystem path to the project.
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
 # Name of the directory for the project.
 PROJECT_DIRNAME = PROJECT_ROOT.split(os.sep)[-1]
@@ -341,11 +341,23 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 # LOCAL SETTINGS #
 ##################
 
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
+
+ALLOWED_HOSTS = ['127.0.0.1']
+
 # Allow any settings to be defined in local_settings.py which should be
 # ignored in your version control system allowing for settings to be
 # defined per machine.
 try:
-    from local_settings import *
+    from demo_mezzanine_3.settings.local_settings import *
 except ImportError:
     pass
 
@@ -366,3 +378,4 @@ except ImportError:
     pass
 else:
     set_dynamic_settings(globals())
+
